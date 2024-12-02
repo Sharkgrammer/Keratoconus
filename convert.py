@@ -39,7 +39,7 @@ def convert_image(image, filename="test.png", save=False):
 
         if x >= 0:
             cropped = overlay_image[0:height - y, 0:width - x]
-            cropped = cv2.copyMakeBorder(cropped, y, 0, x, 0, cv2.BORDER_CONSTANT)
+            cropped = cv2. copyMakeBorder(cropped, y, 0, x, 0, cv2.BORDER_CONSTANT)
         else:
             cropped = overlay_image[0:height - y, abs(x):width - x]
             cropped = cv2.copyMakeBorder(cropped, y, 0, 0, abs(x), cv2.BORDER_CONSTANT)
